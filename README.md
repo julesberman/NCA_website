@@ -1,3 +1,58 @@
+
+
+# Common Use Cases
+
+## Add a team member to "People" section
+
+1. Create a new markdown file in the _people folder, YOUR_NAME.md
+2. Fill out the file, using a previous file as a guide. Should be fairly self explanatory. Use example.md as an example.
+3. Add your headshot or photo to /assets/img/
+
+## Add a publication to "Publications" section
+1. Add your bibtex .bib citation to _bibliography/papers.bib
+2. If throughout the website you want your author name to be a hyperlink to a personal website or google scholar etc... then add a section to coauthors.yml
+3. If you want the paper to appear in the Selected Publications section on the main page set selected={true} in the .bib citation
+
+## Add a project to "Projects" section
+1. Create a new markdown file in the _projects folder, PROJECT_NAME.md
+2. Fill out the file, using a previous file as a guide. Should be fairly self explanatory. Use example.md as an example.
+3. Add the photo for the project to /assets/img/
+
+## Create blog post for "Blog" section
+
+1. Create a new markdown file in the _posts folder
+2. The file must be named as YEAR-MONTH-DAY-SHORTTITLE.md (example: 2016-11-03-bio-conventional.md)
+3. For content see all the examples of different layout in the _posts folder. Recommend using the example_distill.md format.
+
+## Add a new announcement in "News" section on landing page
+1. Create a new markdown file in the _news folder, announcement_num.md
+2. Fill out the file, using a previous file as a guide. Should be fairly self explanatory. Use example.md as an example.
+
+# Running Locally
+
+Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system (*hint: for ease of managing ruby gems, consider using [rbenv](https://github.com/rbenv/rbenv)*), first [fork](https://guides.github.com/activities/forking/) the theme from `github.com:alshedivat/al-folio` to `github.com:<your-username>/<your-repo-name>` and do the following:
+
+```bash
+$ git clone git@github.com:<your-username>/<your-repo-name>.git
+$ cd <your-repo-name>
+$ bundle install
+$ bundle exec jekyll serve
+```
+
+# Other Documentation Resources
+
+ How to install Jekyll and dependencies: https://jekyllrb.com/docs/
+
+ Makrdown cheat sheet: https://www.markdownguide.org/cheat-sheet/
+
+ Original fork of repo: https://github.com/alshedivat/al-folio
+
+ How Jekyll works: http://jekyllbootstrap.com/lessons/jekyll-introduction.html#toc_5
+
+<br/>
+
+## **For all other questions, it is problably best to first consult the original documentation of the Jekyll Templete al-folio:**
+
 # al-folio
 
 [![build status](https://travis-ci.org/alshedivat/al-folio.svg?branch=master)](https://travis-ci.org/alshedivat/al-folio)
