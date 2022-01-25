@@ -16,11 +16,13 @@ layout: default
         {%- assign people = categorized_people | sort: "order" -%} 
         {% for item in people%} 
           <div class="person">
+            {%- if category == "Current" %}
             <div class="photo">
               {%- if item.image %}
-              <img class="photo-image" src="{{ item.image | prepend: '/assets/img/' }}"/>         
+              <img class="photo-image" src="{{ item.image | prepend: '/assets/img/people/' }}"/>         
               {% endif -%}
             </div>
+            {% endif -%}
             <div class="name-position">
               <div class="name">
                 {{ item.name }}{%- if item.degree %}, {{ item.degree }}{% endif -%}
@@ -28,6 +30,11 @@ layout: default
               <div class="position">
                 {{ item.position }}
               </div>
+              {%- if category == "Past" %}
+                <div class="position">
+                  Current Position: {{ item.current }}
+                </div>
+              {% endif -%}
             </div>
             <div class="bio">
               {{ item.content }}

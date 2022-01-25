@@ -2,15 +2,14 @@
 ---
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr">
-        {%- if entry.abbr -%}
-          {%- if site.data.venues[entry.abbr] -%}
-          <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+     
+          {%- if entry.img -%}
+          <div class="photo">
+            <img class="photo-image" src="{{ entry.img | prepend: '/assets/img/pubs/' }}"/>        
+          </div>
           {%- else -%}
-          <abbr class="badge">{{entry.abbr}}</abbr>
+          <div class="no-photo" />
           {%- endif -%}
-        {%- endif -%}
-        </div>
 
         <!-- Entry bib key -->
         <div id="{{entry.key}}" class="col-sm-8">
@@ -92,6 +91,16 @@
           </div>
         {%- endif %}
         
+        <!-- <div class="col-sm-2 abbr">
+        {%- if entry.abbr -%}
+          {%- if site.data.venues[entry.abbr] -%}
+          <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+          {%- else -%}
+          <abbr class="badge">{{entry.abbr}}</abbr>
+          {%- endif -%}
+        {%- endif -%}
+        </div> -->
+
           <!-- Links/Buttons -->
           <div class="links">
           {%- if entry.abstract %}
