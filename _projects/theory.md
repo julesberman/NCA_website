@@ -1,10 +1,11 @@
 ---
-layout: page
+layout: project-page
 title: Theory
 description: Theoretical work on neural computation.
 img: assets/img/theory.png
 importance: 3
 category: Research
+related-tag: Theory
 ---
 
 Connectomes are brain wiring diagrams at the synapse level. They are crucial for reverse engineering circuit function but are extremely scarce. Connectome reconstruction is challenging because it requires imaging and identifying axons and dendrites over tens of microns at nanometer resolution.

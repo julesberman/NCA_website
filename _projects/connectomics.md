@@ -1,10 +1,11 @@
 ---
-layout: page
+layout: project-page
 title: Connectomics
 description: A high resolution map of the brain.
 img: assets/img/conn.png
 importance: 1
 category: Research
+related-tag: Connectomics
 ---
 
 Connectomes are brain wiring diagrams at the synapse level. They are crucial for reverse engineering circuit function but are extremely scarce. Connectome reconstruction is challenging because it requires imaging and identifying axons and dendrites over tens of microns at nanometer resolution.

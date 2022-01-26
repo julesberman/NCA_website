@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: ongoing research and software projects
+description: Ongoing research and software projects
 nav: true
 display_categories: [Research, Software]
 horizontal: false

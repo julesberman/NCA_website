@@ -2,7 +2,10 @@
 ---
 
 %% Most out of the box .bib citations should work
+%% Be sure to have comma after every line as in "title={TITLE},"
+%% To make the citation a clickable link be sure to add url={https://YOUR-URL.COM/}
 %% To add an image set img={IMG_NAME.png} and place the image in /assets/img/pubs/IMG_NAME.png
+%% To add a this paper to a "Related Publications" sections of a Project set related={RELATED-TAG}. RELATED-TAG should correspond to the "related-tag: *****" part of the project.md file.
 %% consider adding abstract = "Blah blah..." which generates the ABS button on layout
 %% To appear on the front page of the website in the "Selected Publications" section set: selected={true},
 
@@ -14,7 +17,21 @@
       archivePrefix={arXiv},
       primaryClass={q-bio.NC},
       selected={true},
-      abbr={NeurIPS},
+      related = {Theory},
+
+}
+
+@article{giovannucci2019caiman,
+  title={CaImAn: An open source tool for scalable Calcium Imaging data Analysis},
+  author={Giovannucci, Andrea and Friedrich, Johannes and Gunn, Pat and Kalfon, Jeremie and Brown, Brandon L and Koay, Sue Ann and Taxidis, Jiannis and Najafi, Farzaneh and Gauthier, Jeffrey L and Zhou, Pengcheng and Khakh, Baljit S and Tank, David W and Chklovskii, Dmitri B and Pnevmatikakis, Eftychios A},
+  journal={eLife},
+  volume={8},
+  pages={e38173},
+  year={2019},
+  img={caiman.jpg},
+  publisher={eLife Sciences Publications Limited},
+  related = {Calcium},
+  url = {https://elifesciences.org/articles/38173}
 }
 
 @article{DBLP:journals/corr/abs-2112-02039,
@@ -26,6 +43,7 @@
   journal   = {CoRR},
   volume    = {abs/2112.02039},
   year      = {2021},
+  related   = {Connectomics},
   url       = {https://arxiv.org/abs/2112.02039},
   eprinttype = {arXiv},
   eprint    = {2112.02039},

@@ -1,5 +1,6 @@
 ---
-name: Jules Berman
+first_name: Jules
+last_name: Berman
 position: Research Analyst
 degree: M.S.
 image: jules.png

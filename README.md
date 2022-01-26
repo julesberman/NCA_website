@@ -38,6 +38,7 @@ $ cd <your-repo-name>
 $ bundle install
 $ bundle exec jekyll serve
 ```
+Then navigate in your browser to http://127.0.0.1:4000
 
 # Other Documentation Resources
 

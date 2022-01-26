@@ -14,7 +14,19 @@ layout: default
     {%- assign categorized_people = site.people | where: "category", category -%}
       <div class="people">
         {%- assign people = categorized_people | sort: "order" -%} 
-        {% for item in people%} 
+        {% for item in people%}
+
+          <!-- Assign url variable from coauthors.yml -->
+          {%- assign coauthor_url = nil -%}
+          {%- if site.data.coauthors[item.last_name] -%}
+            {%- for coauthor in site.data.coauthors[item.last_name] -%}
+              {%- if coauthor.firstname contains item.first_name -%}
+                {%- assign coauthor_url = coauthor.url -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+          
           <div class="person">
             {%- if category == "Current" %}
             <div class="photo">
@@ -24,9 +36,15 @@ layout: default
             </div>
             {% endif -%}
             <div class="name-position">
+              {%- if coauthor_url %}
+              <a class="name" href="{{coauthor_url}}"> 
+                {{ item.first_name }} {{ item.last_name }}{%- if item.degree %}, {{ item.degree }}{% endif -%}
+              </a>
+              {% else %}
               <div class="name">
-                {{ item.name }}{%- if item.degree %}, {{ item.degree }}{% endif -%}
+                {{ item.first_name }} {{ item.last_name }}{%- if item.degree %}, {{ item.degree }}{% endif -%}
               </div>
+              {% endif -%}
               <div class="position">
                 {{ item.position }}
               </div>
