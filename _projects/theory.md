@@ -3,8 +3,6 @@ layout: project-page
 title: Theory
 description: Theoretical work on neural computation.
 img: assets/img/theory.png
-importance: 3
-category: Research
 related-tag: Theory
 ---
 

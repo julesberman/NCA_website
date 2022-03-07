@@ -5,8 +5,7 @@ layout: page                       <- Keep this as is unless you know what you a
 title: Theory                      <- Appears on project card and header for project page
 description: Theoretical work      <- Appears on project card and header for project page
 img: assets/img/theory.png         <- Location of the image for project card, must be in assets/img/, use full path, assets/img/YOUR_IMG.png
-importance: 3                      <- Indicates order in which to show on Project page
-category: Research                 <- IMPORTANT MUST BE EXACTLY "Research" OR "Software", DO NOT LEAVE BLANK
+related-tag: Theory                <- This gives the key word which is used to pull in related publications from papers.bib file
 ---
 
 # This is just the content of the page. This is full markdown so you can (and should!) use markdown stylings and such.

@@ -3,8 +3,6 @@ layout: project-page
 title: Connectomics
 description: A high resolution map of the brain.
 img: assets/img/conn.png
-importance: 1
-category: Research
 related-tag: Connectomics
 ---
 

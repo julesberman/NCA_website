@@ -235,9 +235,9 @@ blockquote {
 // Social (bottom)
 
 .social {
-  text-align: center;
   .contact-icons {
-    font-size: 4rem;
+    padding-left: 4px;
+    font-size: 1.4rem;
     a {
       i::before {
         color: var(--global-text-color);
@@ -260,6 +260,8 @@ blockquote {
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
   font-size: 0.75rem;
+  position: fixed;
+  bottom: 0;
   .container {
     color: var(--global-footer-text-color);
     padding-top: 9px;
@@ -272,13 +274,6 @@ footer.fixed-bottom {
       text-decoration: none;
     }
   }
-}
-
-footer.sticky-bottom {
-  border-top: 1px solid var(--global-divider-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 0.9rem;
 }
 
 
@@ -369,6 +364,10 @@ footer.sticky-bottom {
     }
   }
 
+  .grid {
+    margin-top: 10px;
+  }
+
   .card {
     img {
       width: 100%;
@@ -427,7 +426,8 @@ h2.category {
   .photo {
     height: 200px;
     width: 200px;
-    margin-right: 10px;
+    margin: 15px;
+    margin-top: 0px;
     overflow: hidden;
     text-align: center;
     border: 2px solid var(--global-divider-color);
@@ -551,9 +551,12 @@ h2.category {
 // People pages
 
 .people {
+  display: flex;
+  flex-direction: column;
   .person {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    order: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     border-bottom: 1px solid var(--global-divider-color);
     .photo {
@@ -584,6 +587,9 @@ h2.category {
       flex-grow: 0;
       max-width: 50%;
     }
+  }
+  #leader{
+    order: 0;
   }
 }
 
